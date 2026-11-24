@@ -18,7 +18,7 @@ A fullscreen app for toddlers to bang on the keyboard. Keys show up big and colo
 
 ## Build
 
-Requires Rust (MSVC toolchain) on Windows.
+Requires Rust (MSVC toolchain) on Windows. Build from Windows, not WSL.
 
 ```
 cargo build --release

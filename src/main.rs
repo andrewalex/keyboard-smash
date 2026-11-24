@@ -237,6 +237,9 @@ fn colorref(c: Rgb) -> COLORREF {
 // streams short buffers. Each buffer is the sum of every sound currently
 // playing, so sounds overlap instead of cutting each other off, and a new
 // sound starts within ~50ms.
+//
+// (PlaySoundW was tried first and dropped: it plays one sound at a time, so
+// each press cut off the last one, and playback was unreliable.)
 
 const SAMPLE_RATE: u32 = 44100;
 const BUF_SAMPLES: usize = 1024; // ~23ms per buffer
